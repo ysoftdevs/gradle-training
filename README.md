@@ -84,3 +84,14 @@ Gradle automatically detects toolchain e.g. Visual Studio or GCC.
     gradle mainExecutable
 
 Binary is stored in build/binaries/mainExecutable
+
+
+08-c-visual-studio
+------------------
+
+Gradle is able to generate project files for Visual Studio for C/C++.
+
+    gradle mainVisualStudio
+    ii .\visualStudio\mainExe.sln
+
+Solution file is stored in visualStudio/mainExe.sln
