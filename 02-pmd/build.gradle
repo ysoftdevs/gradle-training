@@ -1,0 +1,20 @@
+apply plugin: 'java'
+apply plugin: 'pmd'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'org.testng', name: 'testng', version: '6.+'
+}
+
+test {
+    useTestNG()
+}
+
+pmdMain {
+    ruleSets = [ "basic", "strings" ]
+    ignoreFailures = true
+}
+

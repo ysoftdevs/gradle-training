@@ -1,0 +1,28 @@
+apply plugin: 'java'
+apply plugin: 'maven'
+
+version = '0.1-SNAPSHOT'
+group = 'com.sinusgear.training'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'org.testng', name: 'testng', version: '6.+'
+}
+
+test {
+    useTestNG()
+}
+
+uploadArchives {
+    repositories {
+        mavenDeployer {
+            repository(url: "file:///idea/training/repo")
+            // use timestamp, e.g.: 06-maven-deployer-0.1-20140408.195954-2
+            uniqueVersion = true
+        }
+    }
+}
+        

@@ -1,0 +1,35 @@
+apply plugin: 'java'
+apply plugin: 'pmd'
+apply plugin: 'checkstyle'
+apply plugin: 'findbugs'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'org.testng', name: 'testng', version: '6.+'
+}
+
+test {
+    useTestNG()
+}
+
+pmdMain {
+    ruleSets = [ "basic", "strings" ]
+    ignoreFailures = true
+}
+
+tasks.withType(Checkstyle) {
+    ignoreFailures = true
+}
+
+tasks.withType(FindBugs) {
+    reports {
+        xml.enabled false
+        html.enabled true
+    }
+    ignoreFailures = true
+    reportLevel = 'low'
+}
+

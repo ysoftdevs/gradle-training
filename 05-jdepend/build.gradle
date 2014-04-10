@@ -1,0 +1,21 @@
+apply plugin: 'java'
+apply plugin: 'jdepend'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'org.testng', name: 'testng', version: '6.+'
+}
+
+test {
+    useTestNG()
+}
+
+tasks.withType(JDepend) {
+    reports {
+        xml.enabled false
+        text.enabled true
+    }
+}
