@@ -1,0 +1,17 @@
+apply plugin: 'c'
+
+sources {
+    main {
+        c {
+            source {
+                // Include just source, avoid including *.swp and other helper files
+                include "**/*.c"
+            }
+        }
+    }
+}
+
+executables {
+    main {
+    }
+}
