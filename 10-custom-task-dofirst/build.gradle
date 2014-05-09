@@ -1,0 +1,14 @@
+task helloWorld {
+    // Configuration phase - Gradle learns about tasks.
+    // This scope is executed first
+    description "Say hello :-)"
+
+    doFirst {
+        // Execution phase
+        println "Sunny day."
+    }
+    doLast {
+        // Execution phase
+        println "Greetings from Brno"
+    }
+}

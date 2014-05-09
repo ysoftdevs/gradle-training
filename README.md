@@ -85,6 +85,8 @@ Gradle is able to generate project files for Visual Studio for C/C++.
     gradle mainVisualStudio
     ii .\visualStudio\mainExe.sln
 
+Solution file is stored in visualStudio/mainExe.sln
+
 
 ## 09-custom-task-dolast
 
@@ -96,4 +98,13 @@ will execute always even when you run `gradle tasks`
 
     gradle tasks
     gradle helloWorld
-Solution file is stored in visualStudio/mainExe.sln
+
+
+## 10-custom-task-dofirst
+
+doLast allows to append execution code at the end of task. There is another
+method doFirst which prepends code before current code. It's useful when
+building decorators.
+
+    gradle tasks
+    gradle helloWorld
