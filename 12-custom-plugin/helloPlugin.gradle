@@ -1,0 +1,8 @@
+
+task helloFromPlugin() {
+    description "Say Hello! Code implemented in plugin."
+    doLast {
+        println "Hello from plugin!"
+    }
+}
+

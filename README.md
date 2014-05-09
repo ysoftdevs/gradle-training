@@ -109,6 +109,7 @@ building decorators.
     gradle tasks
     gradle helloWorld
 
+
 ## 11-task-class
 
 Gradle allows to define custom task class. This class should contain
@@ -120,3 +121,11 @@ Each property defined on class level is configurable from gradle task
     gradle today
     gradle verboseToday
 
+
+## 12-custom-plugin
+
+It's possible to specify tasks outside build.gradle and then "include" file. 
+Gradle uses notion of plugins. Check helloPlugin.gradle file.
+
+    gradle tasks
+    gradle helloFromPlugin
