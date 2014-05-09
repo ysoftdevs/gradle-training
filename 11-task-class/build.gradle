@@ -1,0 +1,22 @@
+
+// Definition of custom task class
+class DateTask extends DefaultTask {
+
+    String prefixText = "Today is:"
+
+    @TaskAction
+    void printDate() {
+        def dateTime = new Date()  
+        println "${prefixText} ${dateTime.dateString}"
+    }
+}
+
+task today(type: DateTask) {
+    description "Display date"
+}
+
+task verboseToday(type: DateTask) {
+    description "Display polite message and date"
+    prefixText "I would like to inform you that today is:"
+}
+

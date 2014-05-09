@@ -108,3 +108,15 @@ building decorators.
 
     gradle tasks
     gradle helloWorld
+
+## 11-task-class
+
+Gradle allows to define custom task class. This class should contain
+one method with annotation @TaskAction. This method will be executed.
+Each property defined on class level is configurable from gradle task
+(see verboseToday).
+
+    gradle tasks
+    gradle today
+    gradle verboseToday
+
