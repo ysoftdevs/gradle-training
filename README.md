@@ -129,3 +129,13 @@ Gradle uses notion of plugins. Check helloPlugin.gradle file.
 
     gradle tasks
     gradle helloFromPlugin
+
+
+## 13-plugin-from-gist
+
+Gradle allows to include code/plugins from network resource.
+In this example plugin is stored as gist at Github
+- https://gist.github.com/georgik/71663c6d8d4e01783733
+
+    gradle tasks
+    gradle helloFromGist
