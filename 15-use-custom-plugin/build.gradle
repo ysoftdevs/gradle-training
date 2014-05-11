@@ -1,0 +1,11 @@
+buildscript {
+    repositories {
+        mavenLocal()
+    }
+    dependencies {
+        classpath 'com.ysoft.training:lines-count:1.0'
+    }
+}
+
+apply plugin: 'lines-count'
+

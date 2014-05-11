@@ -1,0 +1,12 @@
+apply plugin: "groovy"
+apply plugin: "maven"
+
+archivesBaseName = "lines-count"
+version = "1.0"
+group "com.ysoft.training"
+
+dependencies {
+    compile localGroovy()
+    compile gradleApi()
+}
+

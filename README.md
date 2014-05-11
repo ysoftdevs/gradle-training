@@ -139,3 +139,27 @@ In this example plugin is stored as gist at Github
 
     gradle tasks
     gradle helloFromGist
+
+
+## 14-custom-groovy-plugin
+
+Example of stand alone plugin written in Groovy. Compile and install this
+plugin to your local Maven repository. Then you will be able to use it in
+the next example.
+
+    gradle install
+
+Pay attention to special file: src/main/resources/META-INF/gradle-pluginslines-count.properties
+This file will cause that it will be possible to apply plugin by it's id instead
+of java class name. It's preferred solution in Gradle world, because it gives
+you more flexibility when changing plugin implementation
+
+
+## 15-use-custom-plugin
+
+You need to install plugin to your local Maven storage (see example 14.).
+This example shows how to include plugin from local Maven storage.
+Plugin is just counting lines in build.gradle file in current directory.
+
+    gradle tasks
+    gradle countLines
