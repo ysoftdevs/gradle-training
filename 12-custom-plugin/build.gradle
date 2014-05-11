@@ -1,2 +1,2 @@
-apply from: "helloPlugin.gradle"
+apply from: "plugins/helloPlugin.gradle"
 
