@@ -163,3 +163,11 @@ Plugin is just counting lines in build.gradle file in current directory.
 
     gradle tasks
     gradle countLines
+
+
+## 16-stop-build
+
+It is possible to stop build by throwing exception.
+
+    gradle workingTask
+    gradle failingTask

@@ -1,0 +1,15 @@
+
+task workingTask {
+    description 'Task that works'
+    doLast {
+        println 'Everything is ok'
+    }
+}
+
+task failingTask {
+    description 'Task that fails'
+    doLast {
+        throw new GradleException("Problem detected. Build failed")
+    }
+}
+
