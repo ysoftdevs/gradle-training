@@ -171,3 +171,14 @@ It is possible to stop build by throwing exception.
 
     gradle workingTask
     gradle failingTask
+
+
+## 17-testng-groovy
+
+Example combines usage of TestNG for testing and tests written in Groovy.
+It is necessary to declare 'useTestNG()' in test configuration.
+Otherwise tests won't be executed.
+
+    gradle test
+
+Reports are stored in build/reports/tests/index.html
