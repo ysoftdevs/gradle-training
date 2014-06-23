@@ -163,3 +163,18 @@ Plugin is just counting lines in build.gradle file in current directory.
 
     gradle tasks
     gradle countLines
+
+## 16-debug-gradle-script
+
+Do not run in daemon mode.
+Set environment variable GRADLE_OPTS to
+
+    "-Xdebug -Xrunjdwp:transport=dt_socket,server=y,suspend=y,address=5005"
+
+Start gradle task
+
+    gradle hello
+
+Attach remote debugger from Ide.
+
+More information: http://georgik.sinusgear.com/2014/06/23/how-to-debug-gradle-script/

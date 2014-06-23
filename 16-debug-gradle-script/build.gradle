@@ -1,0 +1,16 @@
+class Brno {
+    def stopMe() {
+        def message = "Good place for break point."
+        println message
+    }
+}
+
+task hello {
+    doLast {
+        println "You can't stop me here!"
+        def city = new Brno()
+        city.stopMe()
+    }
+}
+
+
