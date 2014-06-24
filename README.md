@@ -164,7 +164,25 @@ Plugin is just counting lines in build.gradle file in current directory.
     gradle tasks
     gradle countLines
 
-## 16-debug-gradle-script
+## 16-stop-build
+
+It is possible to stop build by throwing exception.
+
+    gradle workingTask
+    gradle failingTask
+
+
+## 17-testng-groovy
+
+Example combines usage of TestNG for testing and tests written in Groovy.
+It is necessary to declare 'useTestNG()' in test configuration.
+Otherwise tests won't be executed.
+
+    gradle test
+
+Reports are stored in build/reports/tests/index.html
+
+## 18-debug-gradle-script
 
 Do not run in daemon mode.
 Set environment variable GRADLE_OPTS to
@@ -178,3 +196,4 @@ Start gradle task
 Attach remote debugger from Ide.
 
 More information: http://georgik.sinusgear.com/2014/06/23/how-to-debug-gradle-script/
+

@@ -1,0 +1,9 @@
+apply plugin: 'groovy'
+
+dependencies {
+    compile gradleApi()
+}
+
+test {
+    useTestNG()
+}

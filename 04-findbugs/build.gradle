@@ -1,6 +1,8 @@
 apply plugin: 'java'
 apply plugin: 'pmd'
 apply plugin: 'checkstyle'
+
+// Documentation: http://www.gradle.org/docs/current/dsl/org.gradle.api.plugins.quality.FindBugsExtension.html
 apply plugin: 'findbugs'
 
 repositories {
