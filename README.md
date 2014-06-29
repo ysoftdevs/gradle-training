@@ -197,3 +197,13 @@ Attach remote debugger from Ide.
 
 More information: http://georgik.sinusgear.com/2014/06/23/how-to-debug-gradle-script/
 
+## 19-war-jetty
+
+Simple web app deployed to local jetty. It will compile sources from
+src/main/webapp into web application.
+
+    gradle jettyRun
+
+Application is accessible at: http://localhost:8080/19-war-jetty
+
+Press CTRL+C to stop server.
