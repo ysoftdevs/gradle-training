@@ -221,3 +221,6 @@ You can start sample portal by:
     gradle grails-run-app
 
 Result is available at: http://localhost:8080/20-grails
+
+More information: https://github.com/grails/grails-gradle-plugin
+Video recording from Building Grails App With Gradle: http://youtu.be/FwZvDU2Jeh8
