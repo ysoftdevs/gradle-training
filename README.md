@@ -207,3 +207,17 @@ src/main/webapp into web application.
 Application is accessible at: http://localhost:8080/19-war-jetty
 
 Press CTRL+C to stop server.
+
+## 20-grails
+
+Grails is framework for building web applications. 
+This example let you bootstrap initial Grails project.
+
+    gradle init
+
+Gradle Grails plugin will create project skeleton.
+You can start sample portal by:
+
+    gradle grails-run-app
+
+Result is available at: http://localhost:8080/20-grails
