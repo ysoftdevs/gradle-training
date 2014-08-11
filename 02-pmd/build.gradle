@@ -14,7 +14,7 @@ test {
 }
 
 pmdMain {
-    ruleSets = [ "basic", "strings" ]
+    ruleSets = [ "java-basic", "java-strings", "java-braces" ]
     ignoreFailures = true
 }
 

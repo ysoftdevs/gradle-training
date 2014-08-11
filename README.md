@@ -12,7 +12,7 @@ List all available tasks:
 
 Try to compile source code:
 
-    gradle compile
+    gradle jar
 
 Run tests:
 
