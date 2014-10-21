@@ -2,6 +2,9 @@
 
 Training files for learning Gradle
 
+Further resources:
+ - YSofters blog - http://www.ysofters.com/tag/gradle/
+ - Georgik's blog - http://georgik.sinusgear.com/tag/gradle/
 
 ##01-build-and-test
 
