@@ -1,0 +1,10 @@
+apply plugin: 'groovy'
+
+import com.ysoft.greeting.GreetingTask
+
+task hello(type: GreetingTask)
+
+// Customize the greeting
+task greeting(type: GreetingTask) {
+    greeting = 'greetings from Brno'
+}

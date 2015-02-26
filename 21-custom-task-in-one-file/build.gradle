@@ -1,0 +1,18 @@
+// Based on example: https://gradle.org/docs/current/userguide/custom_tasks.html
+
+// Use the default greeting
+task hello(type: GreetingTask)
+
+// Customize the greeting
+task greeting(type: GreetingTask) {
+    greeting = 'greetings from Brno'
+}
+
+class GreetingTask extends DefaultTask {
+    String greeting = 'hello from Y Soft'
+
+    @TaskAction
+    def greet() {
+        println greeting
+    }
+}

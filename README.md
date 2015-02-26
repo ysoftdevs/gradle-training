@@ -227,3 +227,29 @@ Result is available at: http://localhost:8080/20-grails
 
 More information: https://github.com/grails/grails-gradle-plugin
 Video recording from Building Grails App With Gradle: http://youtu.be/FwZvDU2Jeh8
+
+
+## 21-custom-task-in-one-file
+
+Gradle has support for defining custom task classes.
+Task class could be extended e.g. from DefaultTask.
+
+You can verify this sample by:
+
+    gradle hello
+    gradle greeting
+
+## 22-custom-task-in-buildSrc
+
+In previous example we discussed how to add custom task. Storing many
+custom tasks in one file makes it unreadable. It's possible to split logic into
+Groovy classes.
+
+Create buildSrc directory with src/main/groovy.
+Store here the class. It's necessary to add package name declaration and imports
+from GradleAPI.
+
+Functionality is the same:
+
+    gradle hello
+    gradle greeting
