@@ -78,7 +78,7 @@ Gradle automatically detects toolchain e.g. Visual Studio or GCC.
 
     gradle mainExecutable
 
-Binary is stored in build/binaries/mainExecutable
+Binary is stored in build/exe/main
 
 
 ## 08-c-visual-studio
