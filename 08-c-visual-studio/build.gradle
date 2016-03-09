@@ -1,18 +1,8 @@
 apply plugin: 'c'
 apply plugin: 'visual-studio'
 
-sources {
-    main {
-        c {
-            source {
-                // Include just source, avoid including *.swp and other helper files
-                include "**/*.c"
-            }
-        }
-    }
-}
-
-executables {
-    main {
+model {
+    components {
+        main(NativeExecutableSpec) {}
     }
 }
